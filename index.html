@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fairy Mary Café</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: rgb(120, 45, 10);
+    }
+    h2 {
+      text-align: center;
+      padding: 5px;
+    }
+    h3 {
+      text-align: center;
+      padding-top: 1cm;
+    }
+    img {
+      border-radius: 10px;
+    }
+    .image-container {
+      display: block;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    button {
+      width: 50%;
+      background: rgb(173, 144, 47);
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 13px;
+      font-family: fantasy;
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+    .button-container {
+      display: block;
+      text-align: center;
+    }
+.primary-button {
+display:block;
+text-align: center;
+margin-left: 1400px;
+width: 200px;
+}
+    footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button class="primary-button" onclick="book()">Book a table</button>
+  </div>
+  <h3>Welcome to</h3>
+  <h1>Fairy Mary Café</h1>
+  <div class="image-container">
+    <img src="https://images.stockcake.com/public/d/2/0/d2019994-a84f-44f6-a78c-ade4fc5e4b22_large/cozy-caf-exterior-stockcake.jpg" 
+    alt="Cozy café exterior">
+  </div>
+  <p>At Fairy Mary Café, the fairy lights twinkle, cosy corners invite you to linger, and every cup of tea is brewed with love.</p>
+  <h2>Menu Highlights</h2>
+  <p>
+    🌼 Fairy Blossom Tea: A delicate infusion of florals with a hint of magic.<br>
+    🧚‍♀️ Pixie Pancakes: Fluffy stacks drizzled with glittering berry compote.<br> 
+    🍋 Enchanted Lemon Cake: A sweet and light cake adorned with edible flowers.
+  </p>
+  <div class="button-container">
+    <button class="secondary-button">Explore our full menu</button>
+  </div>
+  <h2>About Us</h2>
+  <p>
+    Nestled in the heart of Munich, Fairy Mary Café is a haven for lovers of tea, handmade pies, and all things cosy.<br>
+    From our freshly baked treats to our signature enchanted tea blends, every bite and sip is designed to bring joy and comfort.<br>
+    Whether you are looking for a quiet spot to read, a gathering place for friends, or a cosy setting for a special occasion, you will find it here.
+  </p>
+  <h2>Events & Workshops</h2>
+  <p>
+    Check out upcoming events like our "Fairy Tale Tea Blending Workshop" and "Cosy Crafting Evenings".
+  </p>
+  <div class="image-container">
+    <img src="https://images.squarespace-cdn.com/content/v1/5cf6ba117951ba0001a616e1/1614890087599-34IT4BKNOH88SOMCJ3KB/Dry+herbal+tea+blends" 
+    alt="Dry herbal tea blends" width="30%">
+  </div>
+  <p>At Fairy Mary Café, we believe in creating an enchanting escape where delightful treats and whimsical charm come together.</p>
+  <footer>
+    Powered by 🧚🏻‍♀️ Mary, the fairy developer
+  </footer>
+  <script>
+    // Function for the primary button
+    function book() {
+      let name = prompt("Enter your name");
+      prompt("Enter your email address");
+      alert(`Thanks, ${name}! We'll be in touch!`);
+    }
+
+    // Event listener for the secondary button
+    const secondaryButton = document.querySelector('.secondary-button');
+    secondaryButton.addEventListener('click', () => {
+      alert('We are still baking, come back soon!');
+    });
+  </script>
+</body>
+</html>
